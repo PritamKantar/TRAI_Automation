@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRAI Automation Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>TRAI Report Automation</h1>
+<form action="/process" method="POST" enctype="multipart/form-data">
+<label>Select Word Template</label>
+<input type="file" name="word_file" required>
+
+<label>Select Excel Data File</label>
+<input type="file" name="excel_file" required>
+
+<label>Select Mapping File</label>
+<input type="file" name="mapping_file" required>
+
+<button type="submit">Generate Report</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
